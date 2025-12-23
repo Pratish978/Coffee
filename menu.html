@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Haven | Menu</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="logo">☕ <span>Coffee</span> Haven</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="Signup.html" class="nav-btn">Sign Up</a></li>
+        <li>
+          <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-dot"></span>
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section">
+      <h1 class="section-title">Explore Our Menu</h1>
+
+      <!-- FILTER BUTTONS -->
+      <div class="filter-btns">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="coffee">Coffee</button>
+        <button class="filter-btn" data-category="cold">Cold Drinks</button>
+        <button class="filter-btn" data-category="dessert">Desserts</button>
+      </div>
+
+      <!-- MENU GRID -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Coffee -->
+        <div class="menu-card" data-category="coffee">
+          <img src="exp.jfif" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p class="price">₹350</p>
+          <button
+            class="add-to-cart"
+            data-name="Espresso"
+            data-price="350"
+            data-image="espresso.jpg"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="menu-card" data-category="coffee">
+          <img src="cap.png" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p class="price">₹180</p>
+          <button
+            class="add-to-cart"
+            data-name="Cappuccino"
+            data-price="180"
+            data-image="cap.png"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="menu-card" data-category="coffee">
+          <img src="lat.avif" alt="Latte" />
+          <h3>Latte</h3>
+          <p class="price">₹200</p>
+          <button
+            class="add-to-cart"
+            data-name="Latte"
+            data-price="200"
+            data-image="lat.avif"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="menu-card" data-category="coffee">
+          <img src="moch.jpg" alt="Mocha" />
+          <h3>Mocha</h3>
+          <p class="price">₹300</p>
+          <button
+            class="add-to-cart"
+            data-name="Mocha"
+            data-price="300"
+            data-image="moch.jpg"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Cold Drinks -->
+        <div class="menu-card" data-category="cold">
+          <img src="cold.jpg" alt="Cold Coffee" />
+          <h3>Cold Coffee</h3>
+          <p class="price">₹250</p>
+          <button
+            class="add-to-cart"
+            data-name="Cold Coffee"
+            data-price="250"
+            data-image="cold.jpg"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="menu-card" data-category="cold">
+          <img src="ixe.jpg" alt="Iced Latte" />
+          <h3>Iced Latte</h3>
+          <p class="price">₹220</p>
+          <button
+            class="add-to-cart"
+            data-name="Iced Latte"
+            data-price="220"
+            data-image="ixe.jpg"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-card" data-category="dessert">
+          <img src="choc.webp" alt="Cake" />
+          <h3>Chocolate Cake</h3>
+          <p class="price">₹350</p>
+          <button
+            class="add-to-cart"
+            data-name="Chocolate Cake"
+            data-price="350"
+            data-image="cake.jpg"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="menu-card" data-category="dessert">
+          <img src="cross.jpg" alt="Croissant" />
+          <h3>Croissant</h3>
+          <p class="price">₹150</p>
+          <button
+            class="add-to-cart"
+            data-name="Croissant"
+            data-price="150"
+            data-image="cross.jpg"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="menu-card" data-category="dessert">
+          <img src="french.jpg" alt="French Pastry" />
+          <h3>French Pastry</h3>
+          <p class="price">₹200</p>
+          <button
+            class="add-to-cart"
+            data-name="French Pastry"
+            data-price="200"
+            data-image="french.jpg"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2025 Coffee Haven • Designed with ☕ & ❤️</p>
+    </footer>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

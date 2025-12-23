@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Haven</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+      <div class="logo">☕ <span>Coffee</span> Haven</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="Signup.html" class="nav-btn">Sign Up</a></li>
+        <li>
+          <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-dot"></span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content animate">
+        <h1>Crafted Coffee.<br />Perfect Moments.</h1>
+        <p id="hero-text"></p>
+        <div class="hero-buttons">
+          <button class="cta-btn">Order Now</button>
+          <a href="#menu" class="ghost-btn">Explore Menu</a>
+        </div>
+      </div>
+
+      <div class="scroll-down">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section class="menu" id="menu">
+      <h2 class="section-title animate">Our Signature Coffee</h2>
+
+      <div class="menu-grid">
+        <div class="menu-card animate">
+          <img
+            src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+          />
+          <div class="menu-info">
+            <h3>Espresso</h3>
+            <p class="price">₹350</p>
+            <button
+              class="add-to-cart"
+              data-name="Espresso"
+              data-price="350"
+              data-image="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-card animate">
+          <img src="cap.png" />
+          <div class="menu-info">
+            <h3>Cappuccino</h3>
+            <p class="price">₹180</p>
+            <button
+              class="add-to-cart"
+              data-name="Cappuccino"
+              data-price="180"
+              data-image="cap.png"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-card animate">
+          <img src="lat.avif" />
+          <div class="menu-info">
+            <h3>Latte</h3>
+            <p class="price">₹200</p>
+            <button
+              class="add-to-cart"
+              data-name="Latte"
+              data-price="200"
+              data-image="lat.avif"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-card animate">
+          <img src="moch.jpg" />
+          <div class="menu-info">
+            <h3>Mocha</h3>
+            <p class="price">₹300</p>
+            <button
+              class="add-to-cart"
+              data-name="Mocha"
+              data-price="300"
+              data-image="moch.jpg"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <a href="menu.html" class="big-menu-btn">Explore Full Menu</a>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery">
+      <h2 class="section-title animate">Our Coffee Moments</h2>
+
+      <div class="gallery-grid">
+        <img src="caf0.jpg" class="animate" />
+        <img src="caf1.jpg" class="animate" />
+        <img src="caf2.jpg" class="animate" />
+        <img src="caf3.jpg" class="animate" />
+        <img src="caf4.avif" class="animate" />
+        <img src="caf5.jpg" class="animate" />
+        <img src="caf6.jpg" class="animate" />
+        <img src="caf7.jpg" class="animate" />
+        <img src="caf8.jpg" class="animate" />
+        <img src="caf9.jpg" class="animate" />
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta animate">
+      <h2>Start Your Coffee Journey Today</h2>
+      <p>Fresh beans • Skilled baristas • Premium taste</p>
+      <button class="cta-btn large">Order Coffee</button>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <p>© 2025 Coffee Haven • Designed with ☕ & ❤️</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

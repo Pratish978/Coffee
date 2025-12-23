@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Coffee</title>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <section class="order-container">
+      <h1>☕ Order Your Coffee</h1>
+
+      <form id="orderForm">
+        <label>Coffee Name</label>
+        <input
+          type="text"
+          id="coffeeName"
+          placeholder="Eg: Cappuccino"
+          required
+        />
+
+        <label>Quantity</label>
+        <input type="number" id="quantity" min="1" value="1" required />
+
+        <label>Your Name</label>
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label>Address</label>
+        <textarea
+          id="address"
+          placeholder="Delivery address"
+          required
+        ></textarea>
+
+        <button type="submit" class="order-btn">Place Order</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <script src="order.js"></script>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.logo span {
+  color: #6f4e37;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  padding: 10px 16px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #6f4e37;
+  color: white;
+}
+
+.nav-btn {
+  background: #111;
+  color: white !important;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-dot {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 8px;
+  width: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.contact-hero {
+  height: 50vh;
+  background: url("https://images.unsplash.com/photo-1511920170033-f8396924c348") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.contact-hero h1,
+.contact-hero p {
+  position: relative;
+}
+
+.contact-hero h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.contact-hero p {
+  font-size: 1.5rem;
+}
+
+/* ================= CONTACT CONTAINER ================= */
+.contact-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.4s;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+  transform: translateY(-10px);
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 2rem;
+  color: #6f4e37;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info i {
+  color: #6f4e37;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #6f4e37;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #3e2723;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6f4e37;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg,#6f4e37,#3e2723);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-form button:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+/* ================= CTA ================= */
+.contact-cta {
+  padding: 80px 30px;
+  background: l
+}
+
+
+.contact-cta h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.contact-cta p {
+  font-size: 1.3rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 900px){
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 600px){
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+  .contact-hero p {
+    font-size: 1.2rem;
+  }
+  .contact-cta h2 {
+    font-size: 2rem;
+  }
+}
